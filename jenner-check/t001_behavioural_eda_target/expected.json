@@ -1,0 +1,18 @@
+{
+  "_captured_at": "2026-11-27T16:37:51.435929Z",
+  "_captured_run_id": "r_0a13aaaa80364f1eba6e6762014602d9",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "The data set WORK.SAM1 has 84 observations and 20 variables.",
+    "0 observations with duplicate key values were deleted."
+  ],
+  "log_does_not_contain": [
+    "ERROR:",
+    "[JENNER-ERROR"
+  ],
+  "diagnostics": {
+    "parse_warnings": [],
+    "runtime_warnings": []
+  }
+}
