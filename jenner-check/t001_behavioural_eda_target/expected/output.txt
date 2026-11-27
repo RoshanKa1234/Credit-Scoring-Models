@@ -1,0 +1,1156 @@
+                                                     Missing Values                16:37 Friday, November 27, 2026     1
+
+                                                 N
+                                     status    Obs    Variable         N    N Miss
+                                     ---------------------------------------------
+                                     B          21    snapshotdt      21         0
+                                                      key             21         0
+                                                      term            21         0
+                                                      app_score       21         0
+                                                      beh_score       21         0
+                                                      opendt_mth      21         0
+                                                      opendt_year     21         0
+                                                      woff_mth         0        21
+                                                      woff_year        0        21
+                                                      woff_amount     21         0
+                                                      gross_income    21         0
+
+                                     C           4    snapshotdt       4         0
+                                                      key              4         0
+                                                      term             4         0
+                                                      app_score        4         0
+                                                      beh_score        4         0
+                                                      opendt_mth       4         0
+                                                      opendt_year      4         0
+                                                      woff_mth         0         4
+                                                      woff_year        0         4
+                                                      woff_amount      4         0
+                                                      gross_income     4         0
+
+                                     G          59    snapshotdt      59         0
+                                                      key             59         0
+                                                      term            59         0
+                                                      app_score       59         0
+                                                      beh_score       59         0
+                                                      opendt_mth      59         0
+                                                      opendt_year     59         0
+                                                      woff_mth         0        59
+                                                      woff_year        0        59
+                                                      woff_amount     59         0
+                                                      gross_income    59         0
+                                     ---------------------------------------------
+
+                                                     Missing Values                16:37 Friday, November 27, 2026     2
+
+                                                    N
+                                        capbal    Obs    Variable         N    N Miss
+                                  ---------------------------------------------------
+                                           300      7    snapshotdt       7         0
+                                                         key              7         0
+                                                         term             7         0
+                                                         app_score        7         0
+                                                         beh_score        7         0
+                                                         opendt_mth       7         0
+                                                         opendt_year      7         0
+                                                         woff_mth         0         7
+                                                         woff_year        0         7
+                                                         woff_amount      7         0
+                                                         gross_income     7         0
+                                                         overdue          7         0
+                                                         loan             7         0
+                                                         payment_plan     7         0
+                                                         MoB              7         0
+
+                                           600      7    snapshotdt       7         0
+                                                         key              7         0
+                                                         term             7         0
+                                                         app_score        7         0
+                                                         beh_score        7         0
+                                                         opendt_mth       7         0
+                                                         opendt_year      7         0
+                                                         woff_mth         0         7
+                                                         woff_year        0         7
+                                                         woff_amount      7         0
+                                                         gross_income     7         0
+                                                         overdue          7         0
+                                                         loan             7         0
+                                                         payment_plan     7         0
+                                                         MoB              7         0
+
+                                           900      7    snapshotdt       7         0
+                                                         key              7         0
+                                                         term             7         0
+                                                         app_score        7         0
+                                                         beh_score        7         0
+                                                         opendt_mth       7         0
+                                                         opendt_year      7         0
+                                                         woff_mth         0         7
+                                                         woff_year        0         7
+                                                         woff_amount      7         0
+                                                         gross_income     7         0
+                                                         overdue          7         0
+                                                         loan             7         0
+                                                         payment_plan     7         0
+                                                         MoB              7         0
+
+                                          1200      7    snapshotdt       7         0
+                                                         key              7         0
+                                                         term             7         0
+                                                         app_score        7         0
+                                                         beh_score        7         0
+                                                         opendt_mth       7         0
+                                                         opendt_year      7         0
+                                                         woff_mth         0         7
+                                                         woff_year        0         7
+                                                         woff_amount      7         0
+                                                         gross_income     7         0
+                                                         overdue          7         0
+                                                         loan             7         0
+                                                         payment_plan     7         0
+                                                         MoB              7         0
+
+                                          1500      7    snapshotdt       7         0
+                                                         key              7         0
+                                                         term             7         0
+                                                         app_score        7         0
+                                                         beh_score        7         0
+                                                         opendt_mth       7         0
+                                                         opendt_year      7         0
+                                                         woff_mth         0         7
+                                                         woff_year        0         7
+                                                         woff_amount      7         0
+                                                         gross_income     7         0
+                                                         overdue          7         0
+                                                         loan             7         0
+                                                         payment_plan     7         0
+                                                         MoB              7         0
+
+                                          1800      7    snapshotdt       7         0
+                                                         key              7         0
+                                                         term             7         0
+                                                         app_score        7         0
+                                                         beh_score        7         0
+                                                         opendt_mth       7         0
+                                                         opendt_year      7         0
+                                                         woff_mth         0         7
+                                                         woff_year        0         7
+                                                         woff_amount      7         0
+                                                         gross_income     7         0
+                                                         overdue          7         0
+                                                         loan             7         0
+                                                         payment_plan     7         0
+                                                         MoB              7         0
+
+                                          2100      7    snapshotdt       7         0
+                                                         key              7         0
+                                                         term             7         0
+                                                         app_score        7         0
+                                                         beh_score        7         0
+                                                         opendt_mth       7         0
+                                                         opendt_year      7         0
+                                                         woff_mth         0         7
+                                                         woff_year        0         7
+                                                         woff_amount      7         0
+                                                         gross_income     7         0
+                                                         overdue          7         0
+                                                         loan             7         0
+                                                         payment_plan     7         0
+                                                         MoB              7         0
+
+                                          2400      7    snapshotdt       7         0
+                                                         key              7         0
+                                                         term             7         0
+                                                         app_score        7         0
+                                                         beh_score        7         0
+                                                         opendt_mth       7         0
+                                                         opendt_year      7         0
+                                                         woff_mth         0         7
+                                                         woff_year        0         7
+                                                         woff_amount      7         0
+                                                         gross_income     7         0
+                                                         overdue          7         0
+                                                         loan             7         0
+                                                         payment_plan     7         0
+                                                         MoB              7         0
+
+                                          2700      7    snapshotdt       7         0
+                                                         key              7         0
+                                                         term             7         0
+                                                         app_score        7         0
+                                                         beh_score        7         0
+                                                         opendt_mth       7         0
+                                                         opendt_year      7         0
+                                                         woff_mth         0         7
+                                                         woff_year        0         7
+                                                         woff_amount      7         0
+                                                         gross_income     7         0
+                                                         overdue          7         0
+                                                         loan             7         0
+                                                         payment_plan     7         0
+                                                         MoB              7         0
+
+                                          3000      7    snapshotdt       7         0
+                                                         key              7         0
+                                                         term             7         0
+                                                         app_score        7         0
+                                                         beh_score        7         0
+                                                         opendt_mth       7         0
+                                                         opendt_year      7         0
+                                                         woff_mth         0         7
+                                                         woff_year        0         7
+                                                         woff_amount      7         0
+                                                         gross_income     7         0
+                                                         overdue          7         0
+                                                         loan             7         0
+                                                         payment_plan     7         0
+                                                         MoB              7         0
+
+                                          3300      7    snapshotdt       7         0
+                                                         key              7         0
+                                                         term             7         0
+                                                         app_score        7         0
+                                                         beh_score        7         0
+                                                         opendt_mth       7         0
+                                                         opendt_year      7         0
+                                                         woff_mth         0         7
+                                                         woff_year        0         7
+                                                         woff_amount      7         0
+                                                         gross_income     7         0
+                                                         overdue          7         0
+                                                         loan             7         0
+                                                         payment_plan     7         0
+                                                         MoB              7         0
+
+                                          3600      7    snapshotdt       7         0
+                                                         key              7         0
+                                                         term             7         0
+                                                         app_score        7         0
+                                                         beh_score        7         0
+                                                         opendt_mth       7         0
+                                                         opendt_year      7         0
+                                                         woff_mth         0         7
+                                                         woff_year        0         7
+                                                         woff_amount      7         0
+                                                         gross_income     7         0
+                                                         overdue          7         0
+                                                         loan             7         0
+                                                         payment_plan     7         0
+                                                         MoB              7         0
+                                  ---------------------------------------------------
+
+                                                     Missing Values                16:37 Friday, November 27, 2026     3
+
+                                                    N
+                                       overdue    Obs    Variable         N    N Miss
+                                  ---------------------------------------------------
+                                             0     28    snapshotdt      28         0
+                                                         key             28         0
+                                                         term            28         0
+                                                         app_score       28         0
+                                                         beh_score       28         0
+                                                         opendt_mth      28         0
+                                                         opendt_year     28         0
+                                                         woff_mth         0        28
+                                                         woff_year        0        28
+                                                         woff_amount     28         0
+                                                         gross_income    28         0
+                                                         capbal          28         0
+                                                         loan            28         0
+                                                         payment_plan    28         0
+                                                         MoB             28         0
+
+                                            50     28    snapshotdt      28         0
+                                                         key             28         0
+                                                         term            28         0
+                                                         app_score       28         0
+                                                         beh_score       28         0
+                                                         opendt_mth      28         0
+                                                         opendt_year     28         0
+                                                         woff_mth         0        28
+                                                         woff_year        0        28
+                                                         woff_amount     28         0
+                                                         gross_income    28         0
+                                                         capbal          28         0
+                                                         loan            28         0
+                                                         payment_plan    28         0
+                                                         MoB             28         0
+
+                                           100     28    snapshotdt      28         0
+                                                         key             28         0
+                                                         term            28         0
+                                                         app_score       28         0
+                                                         beh_score       28         0
+                                                         opendt_mth      28         0
+                                                         opendt_year     28         0
+                                                         woff_mth         0        28
+                                                         woff_year        0        28
+                                                         woff_amount     28         0
+                                                         gross_income    28         0
+                                                         capbal          28         0
+                                                         loan            28         0
+                                                         payment_plan    28         0
+                                                         MoB             28         0
+                                  ---------------------------------------------------
+
+                                                     Missing Values                16:37 Friday, November 27, 2026     4
+
+                                                      N
+                                Employmnt_Status    Obs    Variable         N    N Miss
+                                -------------------------------------------------------
+                                Employed             21    snapshotdt      21         0
+                                                           key             21         0
+                                                           term            21         0
+                                                           app_score       21         0
+                                                           beh_score       21         0
+                                                           opendt_mth      21         0
+                                                           opendt_year     21         0
+                                                           woff_mth         0        21
+                                                           woff_year        0        21
+                                                           woff_amount     21         0
+                                                           gross_income    21         0
+                                                           capbal          21         0
+                                                           overdue         21         0
+                                                           loan            21         0
+                                                           payment_plan    21         0
+                                                           MoB             21         0
+
+                                Retired              21    snapshotdt      21         0
+                                                           key             21         0
+                                                           term            21         0
+                                                           app_score       21         0
+                                                           beh_score       21         0
+                                                           opendt_mth      21         0
+                                                           opendt_year     21         0
+                                                           woff_mth         0        21
+                                                           woff_year        0        21
+                                                           woff_amount     21         0
+                                                           gross_income    21         0
+                                                           capbal          21         0
+                                                           overdue         21         0
+                                                           loan            21         0
+                                                           payment_plan    21         0
+                                                           MoB             21         0
+
+                                Self-employe         21    snapshotdt      21         0
+                                                           key             21         0
+                                                           term            21         0
+                                                           app_score       21         0
+                                                           beh_score       21         0
+                                                           opendt_mth      21         0
+                                                           opendt_year     21         0
+                                                           woff_mth         0        21
+                                                           woff_year        0        21
+                                                           woff_amount     21         0
+                                                           gross_income    21         0
+                                                           capbal          21         0
+                                                           overdue         21         0
+                                                           loan            21         0
+                                                           payment_plan    21         0
+                                                           MoB             21         0
+
+                                Unemployed           21    snapshotdt      21         0
+                                                           key             21         0
+                                                           term            21         0
+                                                           app_score       21         0
+                                                           beh_score       21         0
+                                                           opendt_mth      21         0
+                                                           opendt_year     21         0
+                                                           woff_mth         0        21
+                                                           woff_year        0        21
+                                                           woff_amount     21         0
+                                                           gross_income    21         0
+                                                           capbal          21         0
+                                                           overdue         21         0
+                                                           loan            21         0
+                                                           payment_plan    21         0
+                                                           MoB             21         0
+                                -------------------------------------------------------
+
+                                                     Missing Values                16:37 Friday, November 27, 2026     5
+
+                                                    N
+                                  gross_income    Obs    Variable         N    N Miss
+                                  ---------------------------------------------------
+                                         20500      7    snapshotdt       7         0
+                                                         key              7         0
+                                                         term             7         0
+                                                         app_score        7         0
+                                                         beh_score        7         0
+                                                         opendt_mth       7         0
+                                                         opendt_year      7         0
+                                                         woff_mth         0         7
+                                                         woff_year        0         7
+                                                         woff_amount      7         0
+                                                         capbal           7         0
+                                                         overdue          7         0
+                                                         loan             7         0
+                                                         payment_plan     7         0
+                                                         MoB              7         0
+
+                                         23000      7    snapshotdt       7         0
+                                                         key              7         0
+                                                         term             7         0
+                                                         app_score        7         0
+                                                         beh_score        7         0
+                                                         opendt_mth       7         0
+                                                         opendt_year      7         0
+                                                         woff_mth         0         7
+                                                         woff_year        0         7
+                                                         woff_amount      7         0
+                                                         capbal           7         0
+                                                         overdue          7         0
+                                                         loan             7         0
+                                                         payment_plan     7         0
+                                                         MoB              7         0
+
+                                         25500      7    snapshotdt       7         0
+                                                         key              7         0
+                                                         term             7         0
+                                                         app_score        7         0
+                                                         beh_score        7         0
+                                                         opendt_mth       7         0
+                                                         opendt_year      7         0
+                                                         woff_mth         0         7
+                                                         woff_year        0         7
+                                                         woff_amount      7         0
+                                                         capbal           7         0
+                                                         overdue          7         0
+                                                         loan             7         0
+                                                         payment_plan     7         0
+                                                         MoB              7         0
+
+                                         28000      7    snapshotdt       7         0
+                                                         key              7         0
+                                                         term             7         0
+                                                         app_score        7         0
+                                                         beh_score        7         0
+                                                         opendt_mth       7         0
+                                                         opendt_year      7         0
+                                                         woff_mth         0         7
+                                                         woff_year        0         7
+                                                         woff_amount      7         0
+                                                         capbal           7         0
+                                                         overdue          7         0
+                                                         loan             7         0
+                                                         payment_plan     7         0
+                                                         MoB              7         0
+
+                                         30500      7    snapshotdt       7         0
+                                                         key              7         0
+                                                         term             7         0
+                                                         app_score        7         0
+                                                         beh_score        7         0
+                                                         opendt_mth       7         0
+                                                         opendt_year      7         0
+                                                         woff_mth         0         7
+                                                         woff_year        0         7
+                                                         woff_amount      7         0
+                                                         capbal           7         0
+                                                         overdue          7         0
+                                                         loan             7         0
+                                                         payment_plan     7         0
+                                                         MoB              7         0
+
+                                         33000      7    snapshotdt       7         0
+                                                         key              7         0
+                                                         term             7         0
+                                                         app_score        7         0
+                                                         beh_score        7         0
+                                                         opendt_mth       7         0
+                                                         opendt_year      7         0
+                                                         woff_mth         0         7
+                                                         woff_year        0         7
+                                                         woff_amount      7         0
+                                                         capbal           7         0
+                                                         overdue          7         0
+                                                         loan             7         0
+                                                         payment_plan     7         0
+                                                         MoB              7         0
+
+                                         35500      7    snapshotdt       7         0
+                                                         key              7         0
+                                                         term             7         0
+                                                         app_score        7         0
+                                                         beh_score        7         0
+                                                         opendt_mth       7         0
+                                                         opendt_year      7         0
+                                                         woff_mth         0         7
+                                                         woff_year        0         7
+                                                         woff_amount      7         0
+                                                         capbal           7         0
+                                                         overdue          7         0
+                                                         loan             7         0
+                                                         payment_plan     7         0
+                                                         MoB              7         0
+
+                                         38000      7    snapshotdt       7         0
+                                                         key              7         0
+                                                         term             7         0
+                                                         app_score        7         0
+                                                         beh_score        7         0
+                                                         opendt_mth       7         0
+                                                         opendt_year      7         0
+                                                         woff_mth         0         7
+                                                         woff_year        0         7
+                                                         woff_amount      7         0
+                                                         capbal           7         0
+                                                         overdue          7         0
+                                                         loan             7         0
+                                                         payment_plan     7         0
+                                                         MoB              7         0
+
+                                         40500      7    snapshotdt       7         0
+                                                         key              7         0
+                                                         term             7         0
+                                                         app_score        7         0
+                                                         beh_score        7         0
+                                                         opendt_mth       7         0
+                                                         opendt_year      7         0
+                                                         woff_mth         0         7
+                                                         woff_year        0         7
+                                                         woff_amount      7         0
+                                                         capbal           7         0
+                                                         overdue          7         0
+                                                         loan             7         0
+                                                         payment_plan     7         0
+                                                         MoB              7         0
+
+                                         43000      7    snapshotdt       7         0
+                                                         key              7         0
+                                                         term             7         0
+                                                         app_score        7         0
+                                                         beh_score        7         0
+                                                         opendt_mth       7         0
+                                                         opendt_year      7         0
+                                                         woff_mth         0         7
+                                                         woff_year        0         7
+                                                         woff_amount      7         0
+                                                         capbal           7         0
+                                                         overdue          7         0
+                                                         loan             7         0
+                                                         payment_plan     7         0
+                                                         MoB              7         0
+
+                                         45500      7    snapshotdt       7         0
+                                                         key              7         0
+                                                         term             7         0
+                                                         app_score        7         0
+                                                         beh_score        7         0
+                                                         opendt_mth       7         0
+                                                         opendt_year      7         0
+                                                         woff_mth         0         7
+                                                         woff_year        0         7
+                                                         woff_amount      7         0
+                                                         capbal           7         0
+                                                         overdue          7         0
+                                                         loan             7         0
+                                                         payment_plan     7         0
+                                                         MoB              7         0
+
+                                         48000      7    snapshotdt       7         0
+                                                         key              7         0
+                                                         term             7         0
+                                                         app_score        7         0
+                                                         beh_score        7         0
+                                                         opendt_mth       7         0
+                                                         opendt_year      7         0
+                                                         woff_mth         0         7
+                                                         woff_year        0         7
+                                                         woff_amount      7         0
+                                                         capbal           7         0
+                                                         overdue          7         0
+                                                         loan             7         0
+                                                         payment_plan     7         0
+                                                         MoB              7         0
+                                  ---------------------------------------------------
+
+                                                     Missing Values                16:37 Friday, November 27, 2026     6
+
+                                                   N
+                                    age_range    Obs    Variable         N    N Miss
+                                    ------------------------------------------------
+                                    18-25         14    snapshotdt      14         0
+                                                        key             14         0
+                                                        term            14         0
+                                                        app_score       14         0
+                                                        beh_score       14         0
+                                                        opendt_mth      14         0
+                                                        opendt_year     14         0
+                                                        woff_mth         0        14
+                                                        woff_year        0        14
+                                                        woff_amount     14         0
+                                                        gross_income    14         0
+                                                        capbal          14         0
+                                                        overdue         14         0
+                                                        loan            14         0
+                                                        payment_plan    14         0
+                                                        MoB             14         0
+
+                                    26-35         21    snapshotdt      21         0
+                                                        key             21         0
+                                                        term            21         0
+                                                        app_score       21         0
+                                                        beh_score       21         0
+                                                        opendt_mth      21         0
+                                                        opendt_year     21         0
+                                                        woff_mth         0        21
+                                                        woff_year        0        21
+                                                        woff_amount     21         0
+                                                        gross_income    21         0
+                                                        capbal          21         0
+                                                        overdue         21         0
+                                                        loan            21         0
+                                                        payment_plan    21         0
+                                                        MoB             21         0
+
+                                    36-45         21    snapshotdt      21         0
+                                                        key             21         0
+                                                        term            21         0
+                                                        app_score       21         0
+                                                        beh_score       21         0
+                                                        opendt_mth      21         0
+                                                        opendt_year     21         0
+                                                        woff_mth         0        21
+                                                        woff_year        0        21
+                                                        woff_amount     21         0
+                                                        gross_income    21         0
+                                                        capbal          21         0
+                                                        overdue         21         0
+                                                        loan            21         0
+                                                        payment_plan    21         0
+                                                        MoB             21         0
+
+                                    46-60         14    snapshotdt      14         0
+                                                        key             14         0
+                                                        term            14         0
+                                                        app_score       14         0
+                                                        beh_score       14         0
+                                                        opendt_mth      14         0
+                                                        opendt_year     14         0
+                                                        woff_mth         0        14
+                                                        woff_year        0        14
+                                                        woff_amount     14         0
+                                                        gross_income    14         0
+                                                        capbal          14         0
+                                                        overdue         14         0
+                                                        loan            14         0
+                                                        payment_plan    14         0
+                                                        MoB             14         0
+
+                                    60+           14    snapshotdt      14         0
+                                                        key             14         0
+                                                        term            14         0
+                                                        app_score       14         0
+                                                        beh_score       14         0
+                                                        opendt_mth      14         0
+                                                        opendt_year     14         0
+                                                        woff_mth         0        14
+                                                        woff_year        0        14
+                                                        woff_amount     14         0
+                                                        gross_income    14         0
+                                                        capbal          14         0
+                                                        overdue         14         0
+                                                        loan            14         0
+                                                        payment_plan    14         0
+                                                        MoB             14         0
+                                    ------------------------------------------------
+
+                                                     Missing Values                16:37 Friday, November 27, 2026     7
+
+                                                    N
+                                          loan    Obs    Variable         N    N Miss
+                                  ---------------------------------------------------
+                                             0     21    snapshotdt      21         0
+                                                         key             21         0
+                                                         term            21         0
+                                                         app_score       21         0
+                                                         beh_score       21         0
+                                                         opendt_mth      21         0
+                                                         opendt_year     21         0
+                                                         woff_mth         0        21
+                                                         woff_year        0        21
+                                                         woff_amount     21         0
+                                                         gross_income    21         0
+                                                         capbal          21         0
+                                                         overdue         21         0
+                                                         payment_plan    21         0
+                                                         MoB             21         0
+
+                                          5400      7    snapshotdt       7         0
+                                                         key              7         0
+                                                         term             7         0
+                                                         app_score        7         0
+                                                         beh_score        7         0
+                                                         opendt_mth       7         0
+                                                         opendt_year      7         0
+                                                         woff_mth         0         7
+                                                         woff_year        0         7
+                                                         woff_amount      7         0
+                                                         gross_income     7         0
+                                                         capbal           7         0
+                                                         overdue          7         0
+                                                         payment_plan     7         0
+                                                         MoB              7         0
+
+                                          5800      7    snapshotdt       7         0
+                                                         key              7         0
+                                                         term             7         0
+                                                         app_score        7         0
+                                                         beh_score        7         0
+                                                         opendt_mth       7         0
+                                                         opendt_year      7         0
+                                                         woff_mth         0         7
+                                                         woff_year        0         7
+                                                         woff_amount      7         0
+                                                         gross_income     7         0
+                                                         capbal           7         0
+                                                         overdue          7         0
+                                                         payment_plan     7         0
+                                                         MoB              7         0
+
+                                          6200      7    snapshotdt       7         0
+                                                         key              7         0
+                                                         term             7         0
+                                                         app_score        7         0
+                                                         beh_score        7         0
+                                                         opendt_mth       7         0
+                                                         opendt_year      7         0
+                                                         woff_mth         0         7
+                                                         woff_year        0         7
+                                                         woff_amount      7         0
+                                                         gross_income     7         0
+                                                         capbal           7         0
+                                                         overdue          7         0
+                                                         payment_plan     7         0
+                                                         MoB              7         0
+
+                                          7000      7    snapshotdt       7         0
+                                                         key              7         0
+                                                         term             7         0
+                                                         app_score        7         0
+                                                         beh_score        7         0
+                                                         opendt_mth       7         0
+                                                         opendt_year      7         0
+                                                         woff_mth         0         7
+                                                         woff_year        0         7
+                                                         woff_amount      7         0
+                                                         gross_income     7         0
+                                                         capbal           7         0
+                                                         overdue          7         0
+                                                         payment_plan     7         0
+                                                         MoB              7         0
+
+                                          7400      7    snapshotdt       7         0
+                                                         key              7         0
+                                                         term             7         0
+                                                         app_score        7         0
+                                                         beh_score        7         0
+                                                         opendt_mth       7         0
+                                                         opendt_year      7         0
+                                                         woff_mth         0         7
+                                                         woff_year        0         7
+                                                         woff_amount      7         0
+                                                         gross_income     7         0
+                                                         capbal           7         0
+                                                         overdue          7         0
+                                                         payment_plan     7         0
+                                                         MoB              7         0
+
+                                          7800      7    snapshotdt       7         0
+                                                         key              7         0
+                                                         term             7         0
+                                                         app_score        7         0
+                                                         beh_score        7         0
+                                                         opendt_mth       7         0
+                                                         opendt_year      7         0
+                                                         woff_mth         0         7
+                                                         woff_year        0         7
+                                                         woff_amount      7         0
+                                                         gross_income     7         0
+                                                         capbal           7         0
+                                                         overdue          7         0
+                                                         payment_plan     7         0
+                                                         MoB              7         0
+
+                                          8600      7    snapshotdt       7         0
+                                                         key              7         0
+                                                         term             7         0
+                                                         app_score        7         0
+                                                         beh_score        7         0
+                                                         opendt_mth       7         0
+                                                         opendt_year      7         0
+                                                         woff_mth         0         7
+                                                         woff_year        0         7
+                                                         woff_amount      7         0
+                                                         gross_income     7         0
+                                                         capbal           7         0
+                                                         overdue          7         0
+                                                         payment_plan     7         0
+                                                         MoB              7         0
+
+                                          9000      7    snapshotdt       7         0
+                                                         key              7         0
+                                                         term             7         0
+                                                         app_score        7         0
+                                                         beh_score        7         0
+                                                         opendt_mth       7         0
+                                                         opendt_year      7         0
+                                                         woff_mth         0         7
+                                                         woff_year        0         7
+                                                         woff_amount      7         0
+                                                         gross_income     7         0
+                                                         capbal           7         0
+                                                         overdue          7         0
+                                                         payment_plan     7         0
+                                                         MoB              7         0
+
+                                          9400      7    snapshotdt       7         0
+                                                         key              7         0
+                                                         term             7         0
+                                                         app_score        7         0
+                                                         beh_score        7         0
+                                                         opendt_mth       7         0
+                                                         opendt_year      7         0
+                                                         woff_mth         0         7
+                                                         woff_year        0         7
+                                                         woff_amount      7         0
+                                                         gross_income     7         0
+                                                         capbal           7         0
+                                                         overdue          7         0
+                                                         payment_plan     7         0
+                                                         MoB              7         0
+                                  ---------------------------------------------------
+
+                                                     Missing Values                16:37 Friday, November 27, 2026     8
+
+                                                  N
+                                    category    Obs    Variable         N    N Miss
+                                    -----------------------------------------------
+                                    1            24    snapshotdt      24         0
+                                                       key             24         0
+                                                       term            24         0
+                                                       app_score       24         0
+                                                       beh_score       24         0
+                                                       opendt_mth      24         0
+                                                       opendt_year     24         0
+                                                       woff_mth         0        24
+                                                       woff_year        0        24
+                                                       woff_amount     24         0
+                                                       gross_income    24         0
+                                                       capbal          24         0
+                                                       overdue         24         0
+                                                       loan            24         0
+                                                       payment_plan    24         0
+                                                       MoB             24         0
+
+                                    2             8    snapshotdt       8         0
+                                                       key              8         0
+                                                       term             8         0
+                                                       app_score        8         0
+                                                       beh_score        8         0
+                                                       opendt_mth       8         0
+                                                       opendt_year      8         0
+                                                       woff_mth         0         8
+                                                       woff_year        0         8
+                                                       woff_amount      8         0
+                                                       gross_income     8         0
+                                                       capbal           8         0
+                                                       overdue          8         0
+                                                       loan             8         0
+                                                       payment_plan     8         0
+                                                       MoB              8         0
+
+                                    3             4    snapshotdt       4         0
+                                                       key              4         0
+                                                       term             4         0
+                                                       app_score        4         0
+                                                       beh_score        4         0
+                                                       opendt_mth       4         0
+                                                       opendt_year      4         0
+                                                       woff_mth         0         4
+                                                       woff_year        0         4
+                                                       woff_amount      4         0
+                                                       gross_income     4         0
+                                                       capbal           4         0
+                                                       overdue          4         0
+                                                       loan             4         0
+                                                       payment_plan     4         0
+                                                       MoB              4         0
+
+                                    4             8    snapshotdt       8         0
+                                                       key              8         0
+                                                       term             8         0
+                                                       app_score        8         0
+                                                       beh_score        8         0
+                                                       opendt_mth       8         0
+                                                       opendt_year      8         0
+                                                       woff_mth         0         8
+                                                       woff_year        0         8
+                                                       woff_amount      8         0
+                                                       gross_income     8         0
+                                                       capbal           8         0
+                                                       overdue          8         0
+                                                       loan             8         0
+                                                       payment_plan     8         0
+                                                       MoB              8         0
+
+                                    5             3    snapshotdt       3         0
+                                                       key              3         0
+                                                       term             3         0
+                                                       app_score        3         0
+                                                       beh_score        3         0
+                                                       opendt_mth       3         0
+                                                       opendt_year      3         0
+                                                       woff_mth         0         3
+                                                       woff_year        0         3
+                                                       woff_amount      3         0
+                                                       gross_income     3         0
+                                                       capbal           3         0
+                                                       overdue          3         0
+                                                       loan             3         0
+                                                       payment_plan     3         0
+                                                       MoB              3         0
+
+                                    6+            6    snapshotdt       6         0
+                                                       key              6         0
+                                                       term             6         0
+                                                       app_score        6         0
+                                                       beh_score        6         0
+                                                       opendt_mth       6         0
+                                                       opendt_year      6         0
+                                                       woff_mth         0         6
+                                                       woff_year        0         6
+                                                       woff_amount      6         0
+                                                       gross_income     6         0
+                                                       capbal           6         0
+                                                       overdue          6         0
+                                                       loan             6         0
+                                                       payment_plan     6         0
+                                                       MoB              6         0
+
+                                    Closed        4    snapshotdt       4         0
+                                                       key              4         0
+                                                       term             4         0
+                                                       app_score        4         0
+                                                       beh_score        4         0
+                                                       opendt_mth       4         0
+                                                       opendt_year      4         0
+                                                       woff_mth         0         4
+                                                       woff_year        0         4
+                                                       woff_amount      4         0
+                                                       gross_income     4         0
+                                                       capbal           4         0
+                                                       overdue          4         0
+                                                       loan             4         0
+                                                       payment_plan     4         0
+                                                       MoB              4         0
+
+                                    Current      27    snapshotdt      27         0
+                                                       key             27         0
+                                                       term            27         0
+                                                       app_score       27         0
+                                                       beh_score       27         0
+                                                       opendt_mth      27         0
+                                                       opendt_year     27         0
+                                                       woff_mth         0        27
+                                                       woff_year        0        27
+                                                       woff_amount     27         0
+                                                       gross_income    27         0
+                                                       capbal          27         0
+                                                       overdue         27         0
+                                                       loan            27         0
+                                                       payment_plan    27         0
+                                                       MoB             27         0
+                                    -----------------------------------------------
+
+                                                     Missing Values                16:37 Friday, November 27, 2026     9
+
+                                                    N
+                                   woff_amount    Obs    Variable         N    N Miss
+                                  ---------------------------------------------------
+                                             0     84    snapshotdt      84         0
+                                                         key             84         0
+                                                         term            84         0
+                                                         app_score       84         0
+                                                         beh_score       84         0
+                                                         opendt_mth      84         0
+                                                         opendt_year     84         0
+                                                         woff_mth         0        84
+                                                         woff_year        0        84
+                                                         gross_income    84         0
+                                                         capbal          84         0
+                                                         overdue         84         0
+                                                         loan            84         0
+                                                         payment_plan    84         0
+                                                         MoB             84         0
+                                  ---------------------------------------------------
+
+                                                     Missing Values                16:37 Friday, November 27, 2026    10
+
+                                                                             E
+                                                                             m
+                                                                             p
+                                                                             l
+                                                     g                       o                              p
+                                      o         w    r                       y                              a
+          s                      o    p         o    o                       m                              y
+          n             a    b   p    e      w  f    s                       n          a                   m
+          a             p    e   e    n   w  o  f    s                       t          g             c     e
+          p             p    h   n    d   o  f  _    _              o        _          e             a     n
+          s             _    _   d    t   f  f  a    i    s    c    v        S          _             t     t
+          h             s    s   t    _   f  _  m    n    t    a    e        t          r             e     _
+          o         t   c    c   _    y   _  y  o    c    a    p    r        a          a      l      g     p
+      O   t    k    e   o    o   m    e   m  e  u    o    t    b    d        t          n      o      o     l   M
+      b   d    e    r   r    r   t    a   t  a  n    m    u    a    u        u          g      a      r     a   o
+      s   t    y    m   e    e   h    r   h  r  t    e    s    l    e        s          e      n      y     n   B
+
+      1  34  1001  36  513  417  2  2019  .  .  0  20500  B   300   50  Self-employe  26-35  5400  5        1  24
+      2  34  1002  48  526  434  3  2020  .  .  0  23000  G   600  100  Retired       36-45  5800  1        0  24
+      3  34  1003  24  539  451  4  2021  .  .  0  25500  G   900    0  Unemployed    46-60  6200  Current  1  24
+      4  34  1004  36  552  468  5  2018  .  .  0  28000  G  1200   50  Employed      60+       0  1        0  24
+      5  34  1005  48  565  485  6  2019  .  .  0  30500  G  1500  100  Self-employe  18-25  7000  1        1  24
+
+                                                   Summary Statistics              16:37 Friday, November 27, 2026    11
+
+           Variable               Mean          Median         Std Dev         Minimum         Maximum     N
+           -------------------------------------------------------------------------------------------------
+           snapshotdt       37.0000000      37.0000000       2.0120121      34.0000000      40.0000000    84
+           term             36.0000000      36.0000000       9.8568061      24.0000000      48.0000000    84
+           app_score       584.5000000     584.5000000      45.1462149     513.0000000     656.0000000    84
+           beh_score       510.5000000     510.5000000      59.0373580     417.0000000     604.0000000    84
+           opendt_mth        6.5000000       6.5000000       3.4727858       1.0000000      12.0000000    84
+           opendt_year    2019.5000000    2019.5000000       1.1247490    2018.0000000    2021.0000000    84
+           woff_mth                  .               .               .               .               .     0
+           woff_year                 .               .               .               .               .     0
+           woff_amount       0.0000000       0.0000000       0.0000000       0.0000000       0.0000000    84
+           -------------------------------------------------------------------------------------------------
+
+                                                Observing Unique values            16:37 Friday, November 27, 2026    12
+
+                                                  Number of Defaults
+
+                                                                Cumulative    Cumulative
+                            status    Frequency    Percent     Frequency      Percent
+                            ---------------------------------------------------------------
+                            B                21     25.00           21        25.00
+                            C                 4      4.76           25        29.76
+                            G                59     70.24           84       100.00
+
+                                           Distribution of Employmnt_Status
+
+                                                                     Cumulative    Cumulative
+                       Employmnt_Status    Frequency    Percent     Frequency      Percent
+                       -------------------------------------------------------------------------
+                       Employed                   21     25.00           21        25.00
+                       Retired                    21     25.00           42        50.00
+                       Self-employe               21     25.00           63        75.00
+                       Unemployed                 21     25.00           84       100.00
+
+                                                Distribution of overdue
+
+                                                                 Cumulative    Cumulative
+                            overdue    Frequency    Percent     Frequency      Percent
+                            ----------------------------------------------------------------
+                            0                 28     33.33           28        33.33
+                            50                28     33.33           56        66.67
+                            100               28     33.33           84       100.00
+
+                                            Distribution of Account Balance
+
+                                                                Cumulative    Cumulative
+                            capbal    Frequency    Percent     Frequency      Percent
+                            ---------------------------------------------------------------
+                            300               7      8.33            7         8.33
+                            600               7      8.33           14        16.67
+                            900               7      8.33           21        25.00
+                            1200              7      8.33           28        33.33
+                            1500              7      8.33           35        41.67
+                            1800              7      8.33           42        50.00
+                            2100              7      8.33           49        58.33
+                            2400              7      8.33           56        66.67
+                            2700              7      8.33           63        75.00
+                            3000              7      8.33           70        83.33
+                            3300              7      8.33           77        91.67
+                            3600              7      8.33           84       100.00
+
+                                             Distribution of Gross_Income
+
+                                                                   Cumulative    Cumulative
+                         gross_income    Frequency    Percent     Frequency      Percent
+                         ---------------------------------------------------------------------
+                         20500                   7      8.33            7         8.33
+                         23000                   7      8.33           14        16.67
+                         25500                   7      8.33           21        25.00
+                         28000                   7      8.33           28        33.33
+                         30500                   7      8.33           35        41.67
+                         33000                   7      8.33           42        50.00
+                         35500                   7      8.33           49        58.33
+                         38000                   7      8.33           56        66.67
+                         40500                   7      8.33           63        75.00
+                         43000                   7      8.33           70        83.33
+                         45500                   7      8.33           77        91.67
+                         48000                   7      8.33           84       100.00
+
+                                               Distribution of Age Range
+
+                                                                  Cumulative    Cumulative
+                           age_range    Frequency    Percent     Frequency      Percent
+                           ------------------------------------------------------------------
+                           18-25               14     16.67           14        16.67
+                           26-35               21     25.00           35        41.67
+                           36-45               21     25.00           56        66.67
+                           46-60               14     16.67           70        83.33
+                           60+                 14     16.67           84       100.00
+
+                                                 Distribution of loan
+
+                                                               Cumulative    Cumulative
+                             loan    Frequency    Percent     Frequency      Percent
+                             -------------------------------------------------------------
+                             0              21     25.00           21        25.00
+                             5400            7      8.33           28        33.33
+                             5800            7      8.33           35        41.67
+                             6200            7      8.33           42        50.00
+                             7000            7      8.33           49        58.33
+                             7400            7      8.33           56        66.67
+                             7800            7      8.33           63        75.00
+                             8600            7      8.33           70        83.33
+                             9000            7      8.33           77        91.67
+                             9400            7      8.33           84       100.00
+
+                                          Distribution of Delienquency Period
+
+                                                                 Cumulative    Cumulative
+                           category    Frequency    Percent     Frequency      Percent
+                           -----------------------------------------------------------------
+                           1                  24     28.57           24        28.57
+                           2                   8      9.52           32        38.10
+                           3                   4      4.76           36        42.86
+                           4                   8      9.52           44        52.38
+                           5                   3      3.57           47        55.95
+                           6+                  6      7.14           53        63.10
+                           Closed              4      4.76           57        67.86
+                           Current            27     32.14           84       100.00
+                                                   The Jenner System               16:37 Friday, November 27, 2026    13
+
+                                                                Cumulative    Cumulative
+                            status    Frequency    Percent     Frequency      Percent
+                            ---------------------------------------------------------------
+                            B                 3     25.00            3        25.00
+                            C                 1      8.33            4        33.33
+                            G                 8     66.67           12       100.00
+                                                   The Jenner System               16:37 Friday, November 27, 2026    14
+
+                                                                         Cumulative    Cumulative
+                    last_status_good_or_bad    Frequency    Percent     Frequency      Percent
+                    --------------------------------------------------------------------------------
+                    B                                  3     25.00            3        25.00
+                    C                                  1      8.33            4        33.33
+                    G                                  8     66.67           12       100.00
+                                                   The Jenner System               16:37 Friday, November 27, 2026    15
+
+                                                                      Cumulative    Cumulative
+                      new_default_status    Frequency    Percent     Frequency      Percent
+                      ---------------------------------------------------------------------------
+                      0                             3     42.86            3        42.86
+                      1                             4     57.14            7       100.00

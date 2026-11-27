@@ -1,0 +1,406 @@
+1          /* cap input rows for the captured run */
+2          options obs=100;
+NOTE: Option OBS changed to 100.
+3
+4          /* mock stand-in for the original: proc import datafile='.../sample.xlsx' out=sam1 dbms=xlsx; */
+5          data sam1;
+6            infile datalines dsd truncover;
+7            input snapshotdt key term app_score beh_score opendt_mth opendt_year woff_mth woff_year woff_amount gross_income status :$1. capbal overdue Employmnt_Status :$12. age_range :$6. loan category :$8. payment_plan MoB;
+8          datalines;
+93         ;
+94         run;
+NOTE: DATA WORK.SAM1
+
+NOTE: Processing inline DATALINES (84 lines)
+
+NOTE: The data set WORK.SAM1 has 84 observations and 20 variables.
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+95
+96         /* ----------------------- EDA --------------------------------- */
+97
+98         /* Removing Duplicates*/
+99         proc sort data=sam1 out=nodup_emptable nodupkey
+100        		dupout=duplicate_table;
+101        	by _all_;
+102        run;
+NOTE: PROC SORT data=WORK.SAM1
+
+NOTE: There were 84 observations read from the data set WORK.SAM1.
+NOTE: 0 observations with duplicate key values were deleted.
+NOTE: The data set WORK.NODUP_EMPTABLE has 84 observations and 20 variables.
+NOTE: PROC SORT statement used.
+103
+104        /* Missing Values*/
+105        ods graphics on;
+NOTE: ODS Graphics is ON (format=SVG).
+106        ods noproctitle;
+107        title "Missing Values";
+108
+109        proc means data=nodup_emptable n nmiss missing;
+110        	var snapshotdt key term app_score beh_score opendt_mth opendt_year woff_mth
+111        woff_year woff_amount gross_income;
+112        class status;
+113        run;
+NOTE: PROC MEANS
+NOTE: PROC MEANS statement used.
+114
+115        proc means data=nodup_emptable n nmiss missing;
+116        	class capbal;
+117        run;
+NOTE: PROC MEANS
+NOTE: PROC MEANS statement used.
+118
+119        proc means data=nodup_emptable n nmiss missing;
+120        	class overdue;
+121        run;
+NOTE: PROC MEANS
+NOTE: PROC MEANS statement used.
+122
+123        proc means data=nodup_emptable n nmiss missing;
+124        	class Employmnt_Status;
+125        run;
+NOTE: PROC MEANS
+NOTE: PROC MEANS statement used.
+126
+127        proc means data=nodup_emptable n nmiss missing;
+128        	class gross_income;
+129        run;
+NOTE: PROC MEANS
+NOTE: PROC MEANS statement used.
+130
+131        proc means data=nodup_emptable n nmiss missing;
+132        	class age_range;
+133        run;
+NOTE: PROC MEANS
+NOTE: PROC MEANS statement used.
+134
+135        proc means data=nodup_emptable n nmiss missing;
+136        	class loan;
+137        run;
+NOTE: PROC MEANS
+NOTE: PROC MEANS statement used.
+138
+139        proc means data=nodup_emptable n nmiss missing;
+140        	class category;
+141        run;
+NOTE: PROC MEANS
+NOTE: PROC MEANS statement used.
+142
+143        proc means data=nodup_emptable n nmiss missing;
+144        	class woff_amount;
+145        run;
+NOTE: PROC MEANS
+NOTE: PROC MEANS statement used.
+146
+147        proc print data=nodup_emptable (obs=5);
+148        run;
+NOTE: PROC PRINT data=WORK.NODUP_EMPTABLE
+
+NOTE: PROC PRINT completed: 5 observations printed, 20 variables
+149
+150        /* Summary Statistics*/
+151        ods graphics on;
+NOTE: ODS Graphics is ON (format=SVG).
+152        ods noproctitle;
+153        title "Summary Statistics";
+154
+155        proc means data=nodup_emptable mean median std min max n;
+156        	var snapshotdt term app_score beh_score opendt_mth opendt_year woff_mth
+157        woff_year woff_amount;
+158        run;
+NOTE: PROC MEANS
+NOTE: PROC MEANS statement used.
+159        title;
+160
+161        /* Observing Unique values*/
+162        Title1 "Observing Unique values";
+163
+164        proc freq data=nodup_emptable;
+165        	table status Employmnt_Status overdue capbal gross_income age_range loan category;
+166        	label status="Number of Defaults" Employmnt_Status="Distribution of Employmnt_Status"
+167        		overdue="Distribution of overdue" capbal="Distribution of Account Balance"
+168        		gross_income="Distribution of Gross_Income"
+169        		age_range="Distribution of Age Range"
+170        		loan="Distribution of loan" category="Distribution of Delienquency Period";
+171        run;
+NOTE: PROC FREQ
+NOTE: PROC FREQ statement used.
+172
+173        Title;
+174
+175        /*  Count of snapshot for each key*/
+176        proc sort data=nodup_emptable;
+177        	by snapshotdt key;
+178        run;
+NOTE: PROC SORT data=WORK.NODUP_EMPTABLE
+
+NOTE: There were 84 observations read from the data set WORK.NODUP_EMPTABLE.
+NOTE: The data set WORK.NODUP_EMPTABLE has 84 observations and 20 variables.
+NOTE: PROC SORT statement used.
+179
+180        /* Look for some pattern in bad records */
+181        data bads;
+182        set nodup_emptable;
+183        if status = 'B' then output;
+184        run;
+NOTE: DATA WORK.BADS
+
+
+NOTE: There were 84 observations read from the data set WORK.NODUP_EMPTABLE.
+NOTE: The data set WORK.BADS has 21 observations and 20 variables.
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+185
+186        /* ----------------------- Data Transformation --------------------------------- */
+187
+188        /* Converting Category variable into numeric format */
+189        /* After below step num_category becomes my main delienquency stage variable */
+190        data cate_check;
+191        set nodup_emptable;
+192        if category = "Current" then category_2="0";
+193            else if category = "6+" then category_2="7";
+194            else if category = "Closed" then category_2= "";
+195                 else category_2 =category;
+196        num_category = input(category_2,2.);
+197        run;
+NOTE: DATA WORK.CATE_CHECK
+
+
+NOTE: There were 84 observations read from the data set WORK.NODUP_EMPTABLE.
+NOTE: The data set WORK.CATE_CHECK has 84 observations and 22 variables.
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+198
+199        /*This is the last status - This will give you the "G" or "B" status*/
+200        proc sql;
+201        create table key_counts as
+202        select key, count(snapshotdt) as SnapshotCount
+203        from cate_check
+204        group by key;
+205        quit;
+NOTE: PROC SQL 
+
+NOTE: Table WORK.KEY_COUNTS created.
+NOTE: PROC SQL statement used.
+206
+207        /* They have to have atleast 6 month of observation */
+208        data keys_with_6_or_more;
+209        set key_counts;
+210        where SnapshotCount >= 6;
+211        run;
+NOTE: DATA WORK.KEYS_WITH_6_OR_MORE
+
+
+NOTE: There were 12 observations read from the data set WORK.KEY_COUNTS.
+      WHERE SnapshotCount>=6;
+NOTE: The data set WORK.KEYS_WITH_6_OR_MORE has 12 observations and 2 variables.
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+212
+213        /* Merge SnapshotCount column with the cate_check for counting total number of snaps in each key */
+214        proc sql;
+215        create table merged_data as
+216        select a.*, b.SnapshotCount
+217        from cate_check as a
+218        right join keys_with_6_or_more as b
+219        on a.key = b.key;
+220        quit;
+NOTE: PROC SQL 
+
+NOTE: Table WORK.MERGED_DATA created.
+NOTE: PROC SQL statement used.
+221
+222        /* The 6 months of observation has to be between 34 to 40 */
+223        DATA Between_34_to_40;
+224           SET merged_data;
+225           if 34 <= snapshotdt <= 40; * 6 months of obs;
+226        RUN;
+NOTE: DATA WORK.BETWEEN_34_TO_40
+
+
+NOTE: There were 84 observations read from the data set WORK.MERGED_DATA.
+NOTE: The data set WORK.BETWEEN_34_TO_40 has 84 observations and 23 variables.
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+227
+228        proc sort data=Between_34_to_40  out=Last_6_obs;
+229        by key snapshotdt;
+230        run;
+NOTE: PROC SORT data=WORK.BETWEEN_34_TO_40
+
+NOTE: There were 84 observations read from the data set WORK.BETWEEN_34_TO_40.
+NOTE: The data set WORK.LAST_6_OBS has 84 observations and 23 variables.
+NOTE: PROC SORT statement used.
+231
+232        data last_obs;
+233        set Last_6_obs;
+234        by key;
+235        if last.key then output;
+236        run;
+NOTE: DATA WORK.LAST_OBS
+
+
+NOTE: There were 84 observations read from the data set WORK.LAST_6_OBS.
+NOTE: The data set WORK.LAST_OBS has 12 observations and 23 variables.
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+237
+238        /*this is to enable to take the first and last observations per account(key)*/
+239        proc sort data=Between_34_to_40 out=sample_sorted;
+240        by key snapshotdt;
+241        run;
+NOTE: PROC SORT data=WORK.BETWEEN_34_TO_40
+
+NOTE: There were 84 observations read from the data set WORK.BETWEEN_34_TO_40.
+NOTE: The data set WORK.SAMPLE_SORTED has 84 observations and 23 variables.
+NOTE: PROC SORT statement used.
+242
+243        /*This will give all the variables when the loan was written (booked)
+244         at the point of the origination --- Compare category stage between firt_obs with last_obs*/
+245        data first_obs;
+246        set sample_sorted;
+247        by key;
+248        if first.key then output;
+249        run;
+NOTE: DATA WORK.FIRST_OBS
+
+
+NOTE: There were 84 observations read from the data set WORK.SAMPLE_SORTED.
+NOTE: The data set WORK.FIRST_OBS has 12 observations and 23 variables.
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+250
+251        proc freq data= last_obs;
+252        table status;
+253        run;
+NOTE: PROC FREQ
+NOTE: PROC FREQ statement used.
+254
+255        /*This will give you the worst arrears status by key (account)*/
+256        /* proc freq data=last_obs;  */
+257        /* 	table category * status/missing nopercent nocol norow; */
+258        /* run; */
+259
+260        proc sort data=cate_check  out=arrears_sorted;
+261        by key num_category;
+262        run;
+NOTE: PROC SORT data=WORK.CATE_CHECK
+
+NOTE: There were 84 observations read from the data set WORK.CATE_CHECK.
+NOTE: The data set WORK.ARREARS_SORTED has 84 observations and 22 variables.
+NOTE: PROC SORT statement used.
+263
+264        /*This will give you the last observation per account (key_id) as it is sorted
+265        in order of arrears (num_category)
+266        */
+267        data max_arrears;
+268        set arrears_sorted;
+269        by key;
+270        if last.key then output;
+271        run;
+NOTE: DATA WORK.MAX_ARREARS
+
+
+NOTE: There were 84 observations read from the data set WORK.ARREARS_SORTED.
+NOTE: The data set WORK.MAX_ARREARS has 12 observations and 22 variables.
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+272
+273        /*This gives 1 observation (row) per account (key)
+274        Most of the information is from the first observation
+275        We also have new columns taken from 2 different dateset these include
+276        Max ever arrears And the last status. If it ever defaulted then it will capture the "B" here.*/
+277
+278        proc sql;
+279        create table First_obs_with_max_arrears as
+280        select a. *
+281                 , b. category as last_category
+282                 , b. status as last_status_good_or_bad
+283                 , c. num_category as max_arrears_status
+284
+285        /*This is now my base data. 1 observation per account (key)*/
+286        from first_obs   as a
+287
+288        left join last_obs as b
+289        on a. key = b. key
+290
+291        left join max_arrears as c
+292        on a. key = c. key
+293        ;
+294        quit;
+NOTE: PROC SQL 
+
+NOTE: Table WORK.FIRST_OBS_WITH_MAX_ARREARS created.
+NOTE: PROC SQL statement used.
+295
+296        proc freq data= First_obs_with_max_arrears;
+297        table last_status_good_or_bad;
+298        run;
+NOTE: PROC FREQ
+NOTE: PROC FREQ statement used.
+299
+300        /* Sample specific for Sampling & NOT for EDA */
+301        /* Removing all closed accounts and Loan = 0 */
+302        DATA No_closedacc;
+303           SET First_obs_with_max_arrears;
+304           IF last_status_good_or_bad = 'C' THEN Delete;
+305           else if loan = 0 then delete;
+306        RUN;
+NOTE: DATA WORK.NO_CLOSEDACC
+
+
+NOTE: There were 12 observations read from the data set WORK.FIRST_OBS_WITH_MAX_ARREARS.
+NOTE: The data set WORK.NO_CLOSEDACC has 9 observations and 26 variables.
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+307
+308        data Goo_bad_only;
+309        set No_closedacc;
+310        /* Set the new default status based on the last status */
+311        IF last_status_good_or_bad = "G" Then new_default_status = 0;
+312        else if last_status_good_or_bad = "B" then new_default_status = 1;
+313        run;
+NOTE: DATA WORK.GOO_BAD_ONLY
+
+
+NOTE: There were 9 observations read from the data set WORK.NO_CLOSEDACC.
+NOTE: The data set WORK.GOO_BAD_ONLY has 9 observations and 27 variables.
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+314
+315        /* Instead of default we have to say 60 days past due */
+316        data New_def_status;
+317        /* This data step calculates the new default status */
+318        set Goo_bad_only (keep=snapshotdt key term loan capbal overdue payment_plan gross_income age_range employmnt_status MoB max_arrears_status new_default_status);
+319        /* Set the new default status based on the maximum arrears status and the last status */
+320        IF max_arrears_status > 2 THEN new_default_status = 1; * 60 days past due;
+321        else if max_arrears_status = 2 THEN delete;
+322        else if max_arrears_status <= 1 THEN new_default_status = 0;
+323        Monthly_income = gross_income/12;
+324        run;
+NOTE: DATA WORK.NEW_DEF_STATUS
+
+
+NOTE: There were 9 observations read from the data set WORK.GOO_BAD_ONLY.
+NOTE: The data set WORK.NEW_DEF_STATUS has 7 observations and 14 variables.
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+325
+326        proc freq data= New_def_status;
+327        table new_default_status;
+328        run;
+NOTE: PROC FREQ
+NOTE: PROC FREQ statement used.
+329
